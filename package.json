@@ -5,7 +5,7 @@
   "main": "theNumberGames.js",
   "scripts": {
     "hello": "node theNumberGames.js",
-    "test": "nyc --reporter=text mocha --reporter=nyan --bail"
+    "test": "nyc --reporter=text-summary mocha --reporter=nyan --bail"
   },
   "repository": {
     "type": "git",
