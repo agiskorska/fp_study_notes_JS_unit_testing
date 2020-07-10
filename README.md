@@ -133,3 +133,15 @@ Why not make an npm script to run this for you? In your `package.json` file, add
 Mocha will automatically look for a folder called `test` and run through all the files at the top level. If you want it to run recursively through sub-folders as well, add `--recursive` to your test command.
 
 
+## Checking your test coverage
+To get a check on what percentage of your code has test coverage, [istanbul]() is one of several options. \
+Istanbul's CLI app, [`nyc`]() is easy to get up and running:
+- Install as a dev dependency: `npm install nyc --save-dev`
+- Add it to your test script: `"test": "nyc reporter=text-summary mocha --reporter=nyan --bail"`
+- If you prefer, add a separate script eg. 
+```js
+ "scripts": {
+    "test": "mocha --reporter=nyan --bail"
+    "test-with-coverage": "nyc reporter=text-summary mocha --reporter=nyan --bail"
+  },
+```
