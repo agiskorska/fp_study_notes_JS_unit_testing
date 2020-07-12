@@ -62,7 +62,7 @@ We will walk through using Mocha and we will use Chai as our assertion library.
 
 **BONUS** Use [rewire](https://www.npmjs.com/package/rewire) to streamline the sharing of code to you test suite. \
 - `npm install rewire --save-dev`
-- In your spec file, add 
+- In your spec file, add
 ```js
 const rewire = require('rewire');
 ```
@@ -99,7 +99,7 @@ For each assertion, we will call on another mocha function, `it`, which takes 2 
 ```js
 describe('addThese', () => {
     let add = app.__get__('add');
-    
+
     it('should exist', () => {
         // we need to make our assertion here
     })
@@ -138,10 +138,10 @@ To get a check on what percentage of your code has test coverage, [istanbul]() i
 Istanbul's CLI app, [`nyc`]() is easy to get up and running:
 - Install as a dev dependency: `npm install nyc --save-dev`
 - Add it to your test script: `"test": "nyc reporter=text-summary mocha --reporter=nyan --bail"`
-- If you prefer, add a separate script eg. 
+- If you prefer, add a separate script eg.
 ```js
  "scripts": {
     "test": "mocha --reporter=nyan --bail"
-    "test-with-coverage": "nyc reporter=text-summary mocha --reporter=nyan --bail"
+    "test-with-coverage": "nyc --reporter=text-summary mocha --reporter=nyan --bail"
   },
 ```
