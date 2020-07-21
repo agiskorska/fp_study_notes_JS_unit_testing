@@ -1,4 +1,4 @@
-# Study Notes
+### Study Notes
 [Intro to TDD](https://github.com/getfutureproof/fp_guides_wiki/wiki/Intro-to-TDD)
 
 # Exercises
