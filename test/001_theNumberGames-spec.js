@@ -14,3 +14,19 @@ describe('multiplyBy3', () => {
         expect(multiplyBy3(5)).to.equal(15);
     })
 });
+
+describe('add', () => {
+    let add = theNumberGames.__get__("add");
+
+    it('should be a function', () => {
+        expect(add).to.be.a('function');
+    });
+
+    it('should take two arguments and add them together', () => {
+        expect(add(2, 4)).to.equal(6);
+    })
+
+    it('should return a number', () => {
+        expect(add(2, 2)).to.be.a('number', 4);
+    })
+});
