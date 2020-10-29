@@ -19,7 +19,7 @@
   "homepage": "https://github.com/getfutureproof/fp_study_notes_testing_tdd_js#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.2.0",
     "nyc": "^15.1.0",
     "rewire": "^5.0.0"
   }
