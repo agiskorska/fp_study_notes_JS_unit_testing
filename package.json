@@ -4,8 +4,8 @@
   "description": "Lecture repo on TDD using Mocha & Chai",
   "main": "theNumberGames.js",
   "scripts": {
-    "hello": "node theNumberGames.js",
-    "test": "nyc --reporter=text-summary mocha --reporter=nyan --bail"
+    "test": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,6 @@
   },
   "homepage": "https://github.com/getfutureproof/fp_study_notes_testing_tdd_js#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.2.0",
-    "nyc": "^15.1.0",
-    "rewire": "^5.0.0"
+    "jest": "^26.6.3"
   }
 }
