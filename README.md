@@ -1,5 +1,5 @@
 ### Study Notes
-| [Intro to TDD](https://github.com/getfutureproof/fp_guides_wiki/wiki/Intro-to-TDD) | [Just Enough JavaScript](https://github.com/getfutureproof/fp_guides_wiki/wiki/Just-Enough-JavaScript) |
+| [Intro to TDD](https://github.com/getfutureproof/fp_guides_wiki/wiki/Intro-to-TDD) | [Just Enough JavaScript](https://github.com/getfutureproof/fp_guides_wiki/wiki/Just-Enough-JavaScript) | [JS Unit Testing with Jest](https://github.com/getfutureproof/fp_guides_wiki/wiki/JS-Unit-Testing-with-Jest) |
 
 # Exercises
 Create tests for a function called ‘fizzbuzz’
