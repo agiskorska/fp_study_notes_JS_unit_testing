@@ -14,7 +14,9 @@ describe("public annoucement service", () => {
        [ "Long live jquery", "jquery" ]
     ])("throws error rejecting messages containing rude words", (msg, word) => {
         it(`rejects ${word}`, () => {
-            expect(messageServices.psa(msg)).toThrowError();
+            expect(() => {
+                messageServices.psa(msg)
+            }).toThrowError();
         })
     })
 })
