@@ -7,8 +7,19 @@ describe('multiplyBy3', () => {
         expect(multiplyBy3).toBeDefined();
     });
 
-    it('should take an argument and multiply it by 3', () => {
-        expect(multiplyBy3(5)).toEqual(15);
+    describe.each([
+        [5, 15],
+        [10, 30],
+        [300, 900],
+        [-4, -12]
+    ])('given arguments of %i, %i', (i, o) => {
+        test('returns the product of %i + 3', () => {
+            expect(multiplyBy3(i)).toBe(o);
+        });
+
+        test(`returns a number`, () => {
+            expect(multiplyBy3(i)).toEqual(expect.any(Number));
+        });
     })
 });
 
