@@ -8,10 +8,12 @@ describe("public annoucement service", () => {
     })
 
     describe.each([
-        "poop", "fart", "bum", "jquery"
-    ])("throws error rejecting messages containing rude words", (word) => {
+       [ "What a load of poop", "poop" ],
+       [ "Ew, stinky fart!", "fart" ],
+       [ "Bums and Tums", "bum" ],
+       [ "Long live jquery", "jquery" ]
+    ])("throws error rejecting messages containing rude words", (msg, word) => {
         it(`rejects ${word}`, () => {
-            let msg = `This is about ${word} haha!`
             expect(messageServices.psa(msg)).toThrowError();
         })
     })
