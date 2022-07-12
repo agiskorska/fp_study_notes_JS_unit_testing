@@ -4,7 +4,7 @@
   "description": "Lecture repo on TDD using Mocha & Chai",
   "main": "theNumberGames.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
     "coverage": "jest --coverage"
   },
   "repository": {
